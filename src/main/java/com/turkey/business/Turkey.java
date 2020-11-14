@@ -1,6 +1,12 @@
 package com.turkey.business;
 
+import javax.persistence.*;
+
+@Entity
 public class Turkey {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String name;
 	private double weight;
